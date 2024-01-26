@@ -39,9 +39,8 @@ jobs:
           install -m 600 -D /dev/null ~/.ssh/id_rsa
           echo "${{ secrets.BUILD_SSH_KEY }}" > ~/.ssh/id_rsa
           echo "${{ secrets.HOST_KEY }}" > ~/.ssh/known_hosts
-          echo "Host borgeirgens.no
-              Hostname ssh.borgeirgens.no
-              user build
+          echo "Host ssh.borgeirgens.no
+              user borgeirgens.no
               IdentityFile ~/.ssh/id_rsa" > ~/.ssh/config
 
       - name: deploy
