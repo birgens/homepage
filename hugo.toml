@@ -1,16 +1,19 @@
 baseURL = 'https://www.borgeirgens.no/'
-languageCode = 'en-us'
-title = 'My Personal Blog'
+languageCode = 'no-nb'
+title = 'Personlig blog'
 theme = 'ananke'
 
+[taxonomies]
+  tag = 'tags'
+  project = 'projects'
 
 [[menu.main]]
   name ="Home"
   url = "/"
   weight = 1
 [[menu.main]]
-  name = "About"
-  url = "/about/"
+  name = "Om"
+  url = "/om/"
   weight = 2
 [[menu.main]]
   name = "Posts"
